@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import { sectionWrapper } from '../hoc';
+import { avatar } from '../assets';
 
 interface serviceCardProps {
   index: number,
@@ -17,7 +19,7 @@ const ServiceCard: React.FC<serviceCardProps> = ({index, title, icon}) => {
   return(
     <Tilt className="xs:w-[250px] w-auto" >
       <motion.div variants={fadeIn("right", "spring", 0.5 * index, 0.75)} className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
-      <div options={{ max: 4, scale: 45, speed: 20 }} className='bg-tertiary rounded-[20px] py-5 px12 min-h-[280px] flex justify-evenly items-center flex-col'>
+      <div  className='bg-tertiary rounded-[20px] py-5 px12 min-h-[280px] flex justify-evenly items-center flex-col'>
           <img src={icon} alt={title} className='w-16 h-16 object-contain'/>
           <h3 className='text-white font-bold text-[26px] text-center'>{title}</h3>
         </div>
@@ -30,6 +32,9 @@ const About: React.FC = () => {
   return (
     <>
       <motion.div>
+        <motion.div animate={{ x: 100 }} transition={{ type: 'spring', damping: 10 }}>
+          <img src={avatar} alt="avatar" className='w-[128px] h-[128px]'/>
+        </motion.div>
         <p className={`${styles.sectionSubText} text-[20px] font-normal`}>Introduction</p>
         <h2 className={`${styles.sectionHeadText} text-[40px] font-bold`}>Overview.</h2>
       </motion.div>
@@ -47,4 +52,4 @@ const About: React.FC = () => {
   )
 }
 
-export default About
+export default sectionWrapper(About, "about")
