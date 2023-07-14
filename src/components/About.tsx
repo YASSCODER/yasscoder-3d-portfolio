@@ -32,7 +32,7 @@ const About: React.FC = () => {
   return (
     <>
       <motion.div>
-        <motion.div animate={{ x: 100 }} transition={{ type: 'spring', damping: 10 }}>
+        <motion.div variants={fadeIn("right", "spring", 1, 0.7)}>
           <img src={avatar} alt="avatar" className='w-[128px] h-[128px]'/>
         </motion.div>
         <p className={`${styles.sectionSubText} text-[20px] font-normal`}>Introduction</p>
