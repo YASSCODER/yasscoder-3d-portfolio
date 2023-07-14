@@ -25,6 +25,9 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import reactl from "./company/react-l.png";
+import reactn from "./company/react-native.jpg";
+import nestjs from "./company/nestjs.svg"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -33,6 +36,9 @@ import avatar from "./yassine-avatar.png";
 import logo1 from "./logo1.gif";
 
 export {
+  reactn,
+  nestjs,
+  reactl,
   logo1,
   avatar,
   logo,

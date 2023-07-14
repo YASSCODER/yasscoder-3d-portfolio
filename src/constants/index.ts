@@ -16,13 +16,13 @@ import {
     figma,
     docker,
     meta,
-    starbucks,
-    tesla,
-    shopify,
+    reactl,
     carrent,
     jobit,
     tripguide,
     threejs,
+    nestjs,
+    reactn
   } from "../assets";
   
   export const navLinks = [
@@ -118,7 +118,7 @@ import {
     {
       title: "React.js Developer",
       company_name: "Starbucks",
-      icon: starbucks,
+      icon: reactl,
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
       points: [
@@ -131,11 +131,11 @@ import {
     {
       title: "React Native Developer",
       company_name: "Tesla",
-      icon: tesla,
+      icon: reactn,
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Feb 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining mobile applications for android and apple products using React-native.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
@@ -144,13 +144,13 @@ import {
     {
       title: "Web Developer",
       company_name: "Shopify",
-      icon: shopify,
+      icon: nestjs,
       iconBg: "#383E56",
       date: "Jan 2022 - Jan 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Developing and maintaining back-end web applications using Nest.js .",
+        "Collaborating with cross-functional teams including product managers, and other developers to create high-quality products.",
+        "Consuming Apis and End-points and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
