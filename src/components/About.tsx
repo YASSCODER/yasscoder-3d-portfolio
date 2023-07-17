@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
@@ -13,6 +14,7 @@ interface serviceCardProps {
   title: string,
   icon: string,
 }
+
 
 
 const ServiceCard: React.FC<serviceCardProps> = ({index, title, icon}) => {
